@@ -1,0 +1,20 @@
+https://wttr.in/oymyakon //запрос погоды в Оймяконе
+
+https://wttr.in/san%20francisco?nTqu&lang=ru //запрос погоды в с.франциско
+
+import requests
+import codecs
+
+#url = 'https://wttr.in//san francisco?nTqu&lang=en'
+#url = 'https://wttr.in//svo?nTqu&lang=ru'
+#url = 'https://wttr.in//london?nTqu&lang=ru'
+url = 'https://wttr.in//{Череповец}?mnqT&lang=ru'
+
+response = requests.get(url)
+response.raise_for_status()
+response.encoding
+
+response.url
+
+
+print(response.text)
